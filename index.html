@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	
+	<title>CopyPaste</title>
+	
+	<link rel="stylesheet" href="jquery.rFormStyler.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="jquery.rFormStyler.js"></script>
+
+	<script>
+		$(function() {
+			$('select').rFormStyler();
+		});
+	</script>
+</head>
+<body>
+	
+	<form action="" method="get">
+		<table width="100%">
+			<tr>
+				<td>
+					<label for="testSelect1">Label for select 1</label>
+					<select name="testSelect1" id="testSelect1">
+						<optgroup label="group 1">
+							<option value="1">test value 1</option>
+							<option value="2">test value 2</option>
+							<option value="3" selected="selected">test value 3</option>
+							<option value="4">test value 4</option>
+							<option value="5">test value 5</option>
+						</optgroup>
+						<optgroup label="group 2">
+							<option value="2-1">test value 2-1</option>
+							<option value="2-2">test value 2-2</option>
+							<option value="2-3">test value 2-3</option>
+							<option value="2-4">test value 2-4</option>
+							<option value="2-5">test value 2-5</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="testSelect2" id="testSelect2">
+						<option value="1" disabled="disabled">test value 1</option>
+						<option value="2">test value 2</option>
+						<option value="3">test value 3</option>
+						<option value="4" selected="selected">test value 4</option>
+						<option value="5">test value 5</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="testSelect3" id="testSelect3" disabled="disabled">
+						<option value="1">test value 1</option>
+						<option value="2">test value 2</option>
+						<option value="3">test value 3</option>
+						<option value="4">test value 4</option>
+						<option value="5" selected="selected">test value 5</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="testSelect4" id="testSelect4" multiple="multiple">
+						<option value="1">test value 1</option>
+						<option value="2">test value 2</option>
+						<option value="3">test value 3</option>
+						<option value="4">test value 4</option>
+						<option value="5" selected="selected">test value 5</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><button type="submit">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
